@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+@import './studio.css';
+@import './arrangement.css';
+@import './checkout.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', 'Segoe UI', sans-serif;
+}
+
+:root {
+    font-family: var(--font-sans);
+    color: #242a24;
+    background: #f5f4ed;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    --ink: #242a24;
+    --muted: #85877e;
+    --line: #e5e5dc;
+    --green: #355c45;
+    --green-dark: #284534;
+    --paper: #fffefa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(ellipse at 82% 10%, rgba(227, 229, 208, .48), transparent 28rem),
+        #f5f4ed;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+button {
+    color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #d59a55;
+    outline-offset: 3px;
+}
